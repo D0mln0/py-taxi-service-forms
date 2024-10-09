@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Delete {{ car.model }}</h1>
+  <p>Are you sure that you want to delete {{ car.model }}</p>
+  <p><i>
+    If you delete {{ car.model }}, all other elements which content this model will be also deleted
+  </i></p>
+  <input type="submit" value="Submit">
+{% endblock %}

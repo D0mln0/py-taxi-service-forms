@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Delete {{ manufacturer.name }}</h1>
+  <p>Are you sure that you want to delete {{ manufacturer.name }}</p>
+  <p><i>
+    If you delete {{ manufacturer.name }}, all other elements which content this manufacturer will be also deleted
+  </i></p>
+  <input type="submit" value="Submit">
+{% endblock %}
